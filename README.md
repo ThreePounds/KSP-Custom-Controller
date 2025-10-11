@@ -1,6 +1,6 @@
 # KSP-Custom-Controller
 
-This is a custom built game controller with 12 buttons and 7 analog axis using a teensy 4.0 and a 3D-printed housing desinged for Kerbal Space Program. It's heavily inspired by [ksp-controller](https://github.com/malarcky/ksp-controller/) by *malarcky*.
+This is a custom built game controller with 12 buttons and 7 analog axis using a teensy 4.0 and a 3D-printed housing designed for Kerbal Space Program. It's heavily inspired by [ksp-controller](https://github.com/malarcky/ksp-controller/) by *malarcky*.
 
 ## Setting up the custom controller
 
@@ -38,7 +38,7 @@ This code sets up the USB type and can be inserted any where after the first `#i
 
 ### usb_joystick.h
 
-This handles this axis and button assigment and must be added before the line `#elif JOYSTICK_SIZE == 64`.
+This handles this axis and button assignment and must be added before the line `#elif JOYSTICK_SIZE == 64`.
 
 ```
 #elif JOYSTICK_SIZE == 16 // Modified for 7-Axis, 12-Button, 16-Byte Report
@@ -74,7 +74,7 @@ This handles this axis and button assigment and must be added before the line `#
 	}
 ```
 
-In the `private:`section before the line `#if JOYSTICK_SIZE == 64` add:
+In the `private:` section before the line `#if JOYSTICK_SIZE == 64` add:
 
 ```
 #if JOYSTICK_SIZE == 16
@@ -94,7 +94,7 @@ In the `private:`section before the line `#if JOYSTICK_SIZE == 64` add:
 
 ## 3D-printed housing
 
-The housing was modelled using FreeCad 1.0.2. Included are .3mf files for the face plate and housing so they can be printed seperately.
+The housing was modelled using FreeCad 1.0.2. Included are .3mf files for the face plate and housing so they can be printed separately.
 
 ## The finished controller
 
